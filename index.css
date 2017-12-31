@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:900');/*title*/
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300');/*body*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800'); /*indicator*/
+
+
+
+/*default color of background and font*/
+body {
+  background-color: #331651;
+  color: #000;
+}
+/*styling of title*/
+#title {
+  color: #8e1875;
+  font-size: 4em;
+  font-family: 'Raleway', sans-serif;
+  text-shadow: 2px 2px 4px #fff;
+}
+/*styling of displayArea;setting parent element to flex for sizing*/
+#displayArea {
+  border: none;
+  height: 300px;
+  width: 50%;
+  margin: 0 auto;
+  background-color: #8e1875;
+  border-radius: 12px;
+  box-shadow: 10px 10px 5px #000;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*sizing for smaller screens*/
+@media screen and (max-width: 700px) {
+  #displayArea {
+    width: 100%;
+  }
+}
+
+p {
+  color: #c1b6c0;
+}
+
+#fcc-link {
+  text-decoration: none;
+  color: #8e1875;
+}
+
+#fcc-link:hover {
+  color: #c1b6c0;
+}
+
+.changers {
+  background-color: #8e1875;
+  cursor: pointer;
+}
+
+h4 {
+  font-family: 'Quicksand', sans-serif;
+}
+
+#timer {
+  background-color: #331651;
+  color: #ede8d7;
+  font-family: 'Arial', sans-serif;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+  box-shadow: 4px 4px 6px #000;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  #box1, #box3 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .dark {
+    background-color: #331651;
+    color: #ede8d7;
+    font-family: 'Helvetica', sans-serif;
+  }
+
+
+  #defaultTimer:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #startWork:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #startBreak:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #stop:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #pause:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #resume:hover {
+    box-shadow: 2px 2px 4px #ede8d7;
+    cursor: pointer;
+  }
+
+  #home {
+    margin: 0 auto;
+  }
+
+  .fa-home {
+    color: #8e1875;
+  }
+
+  .fa-home:hover {
+    color: #ede8d7;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #workOrBreak {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: #000;
+    border-radius: 12px;
+  }

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pomodoro Clock</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <!--font awesome stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-	awesome.min.css"/>
+      <!--bootstrap-->
+    <link rel="stylesheet"
+     href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" 	integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+      crossorigin="anonymous">
+      <!--my css-->
+    <link rel="stylesheet"
+     type="text/css"
+      href="index.css">
+
+</head>
+
+<body>
+
+  <div class="container-fluid">
+    <!--navbar-->
+    <div class="row">
+      <div id="home"><a href="https://k8codes.github.io"><span class="fa fa-home"></a></div>
+    <!--closing div for nav bar-->
+    </div>
+
+    <!--title and subtitle-->
+    <div id="header">
+      <h1 class="text-center" id="title">Pomodoro Clock</h1>
+      <p class="text-center">a <a href="https://freecodecamp.org" id="fcc-link">FreeCodeCamp</a> project</p>
+    </div>
+    <!--main box/where timer and buttons are located-->
+    <div id="displayArea">
+      <div id="box1">
+        <h4 class="text-center">work</h4>
+        <button class="btn btn-sm changers" id="workPlus"><span class="fa fa-2x fa-plus-circle"></span></button>
+        <button class="btn btn-sm changers" id="workMinus"><span class="fa fa-2x fa-minus-circle"><span></button>
+        <button class="btn btn-sm dark" id="startWork">start</button>
+      </div>
+      <div id="box2" class="text-center">
+        <div class="text-center" id="workOrBreak"></div>
+        <h1 class="text-center" id="timer"></h1>
+        <button class="btn btn-sm dark" id="defaultTimer">default</button>
+        <button class="btn btn-sm dark" id="stop">stop</button>
+        <button class="btn btn-sm dark" id="pause">pause</button>
+        <button class="btn btn-sm dark hide" id="resume">resume</button>
+      </div>
+      <div id="box3">
+        <h4 class="text-center">break</h4>
+        <button class="btn btn-sm changers" id="breakPlus"><span class="fa fa-2x fa-plus-circle"></span></button>
+        <button class="btn btn-sm changers" id="breakMinus"><span class="fa fa-2x fa-minus-circle"></span></button>
+        <button class="btn btn-sm dark" id="startBreak">start</button>
+      </div>
+    </div>
+  </div>
+
+  <!--jQuery/bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-	KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 	crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" 	integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" 	crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" 	integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" 	crossorigin="anonymous"></script>
+  <script src="index.js" type="text/javascript"></script>
+
+</body>
+</html>
