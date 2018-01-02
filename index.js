@@ -163,6 +163,8 @@ $(document).ready(function() {
   $('#stop').click(function() {
     clearTimer();
     removeAll();
+    $('#resume').addClass('hide');
+    $('#pause').removeClass('hide').attr('disabled', 'disabled');
   })
 
   $('#pause').click(function() {
@@ -175,19 +177,19 @@ $(document).ready(function() {
       now = new Date().getTime();
       breakAmount = future - now;
     }
-    $('#workOrBreak').html('TIMER PAUSED');
-    $(this).addClass('hide');
-    $('#resume').removeClass('hide');
+      $('#workOrBreak').html('TIMER PAUSED');
+      $(this).addClass('hide');
+      $('#resume').removeClass('hide');
   })
 
-  $('#resume').click(function() {
-    if (isWork == true) {
-      setTimer();
-    } else if (isBreak == true) {
-      setBreak();
-    }
-    $(this).addClass('hide');
-    $('#pause').removeClass('hide');
-  })
+    $('#resume').click(function() {
+      if (isWork == true) {
+        setTimer();
+      } else if (isBreak == true) {
+        setBreak();
+      }
+      $(this).addClass('hide');
+      $('#pause').removeClass('hide');
+    })
 
 })
