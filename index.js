@@ -8,6 +8,13 @@ $(document).ready(function() {
   let isWork = false;
   let isBreak = false;
 
+
+  function timerSound() {
+    var a = 'https://dl.dropboxusercontent.com/s/a6lyhh3j0ax5qmr/notification48.mp3?dl=0';
+    var audio = new Audio(a);
+    audio.play();
+  }
+
   $('#pause').attr('disabled', 'disabled');
 
   function displayNums() {
@@ -38,6 +45,10 @@ $(document).ready(function() {
 
       displayNums();
 
+      if (distance == 1000) {
+        timerSound();
+      }
+
       if (distance <= 1000) {
         clearInterval(x);
         setBreak();
@@ -57,6 +68,10 @@ $(document).ready(function() {
       distance = future - now;
 
       displayNums();
+
+      if (distance == 1000) {
+        timerSound();
+      }
 
       if (distance <= 1000) {
         clearInterval(k);
